@@ -33,6 +33,7 @@ public class ContactOverlay extends Activity {
 		Log.d("Inside onCreate", "ContactOverlay");
 		Bundle bundle = this.getIntent().getBundleExtra(PHONE_NUMBER_EXTRA_TAG);
 		Log.d("Inside onCreate", "ContactOverlay " +phoneNumber);
+		Log.d("TEst ", "TEst");
 		
 		getWindow().addFlags(WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED);
 		getWindow().addFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE);
