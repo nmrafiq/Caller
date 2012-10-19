@@ -25,10 +25,12 @@ public class SqlDBHelper extends SQLiteOpenHelper {
 	public static final String contactSex = "Sex";
 
 	public SqlDBHelper(Context context) {
+		// git check
 		super(context, DB_NAME, null, DB_VERSION);
 		// TODO Auto-generated constructor stub
 		this.context = context;
 		practoDB = context.openOrCreateDatabase(DB_NAME, 0, null); //db creation
+		Log.d("Test ", "Test ");
 	}
 	public boolean insertIntoTable(ContentValues contentValues){ // to insert the values into the table
 		String toastMessage;
